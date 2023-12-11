@@ -5,8 +5,6 @@ try:
         data = json.load(file)
 except FileNotFoundError:
     print('files netika atrasts')
-except json.JSONDecoder:
-    print('files nav json formata')
 
 print(f'Kopējais grāmatu skaits: {len(data)}')
 autors = input('Nosauciet autora vārdu un uzvārdu: ')
